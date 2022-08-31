@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap');
+
+.formcontent {
+    font-family: "Montserrat", sans-serif;
+    color: #c5c5ce;
+    display: grid;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    grid-template-rows: 2fr 2fr 4fr 1fr 1fr;
+    /* grid-template-rows: 2fr 4fr 1fr; */
+    grid-auto-columns: 1fr 1fr;
+    /* width: 100%; */
+    height: 100%
+}
+
+.selectprovince {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
+    font-weight: bold;
+    color: white;
+    background-color: #663399;
+    border-style: none;
+    height: 30px;
+    width: 65%;
+    border-radius: 5px;
+    /* max-width: fit-content; */
+    cursor: pointer;
+}
+
+.provinceprompt {
+    font-size: clamp(0.8rem, 1vw, 1.4rem);
+}
+
+.provinceinfo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.salaryinfo {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.salaryboxes {
+    flex-direction: row;
+}
+
+.infodisplay {
+    grid-column: 1;
+    grid-row: 3;
+    font-size: clamp(0.5rem, -0.1rem + 1vw, 1.4rem);
+}
+
+
+.selectrate {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.7rem, 1vw, 1.4rem);
+    font-weight: bold;
+    color: white;
+    background-color: #663399;
+    border-style: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 29%;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.salaryprompt {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.7rem, 1vw, 1.4rem);
+    font-weight: bold;
+    color: white;
+    background-color: #663399;
+    border-style: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 35%;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.provinceoption {
+    color: white;
+    /* font-size: 1rem; */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pin {
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(0.6rem, 1vw, 1.4rem);
+    font-weight: bold;
+    color: white;
+    height: 30px;
+    background-color: #663399;
+    border-style: none;
+    border-radius: 5px;
+    width: 15%;
+    cursor: pointer;
+    grid-row: 4;
+    grid-column: 1;
+    margin-top: 8px;
+}
+
+.rate,
+.province,
+.federal,
+.provincial,
+.rate,
+.total,
+.gross,
+.salarydollarsign {
+    color: #d367c1;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.chart {
+    grid-column: 2;
+    grid-row: 1/4;
+}
+
+@media (max-width: 1115px) {
+    .formcontent {
+        font-family: "Montserrat", sans-serif;
+        color: #c5c5ce;
+        display: grid;
+        /* grid-template-rows: 2fr 2fr 4fr 1fr; */
+        /* grid-template-columns: repeat(2, 1fr); */
+        height: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .formcontent {
+        font-family: "Montserrat", sans-serif;
+        color: #c5c5ce;
+        display: grid;
+        overflow: auto;
+        height: 100%;
+    }
+
+    .chart {
+        grid-column: 1;
+        grid-row: 4;
+        height: 100%;
+    }
+
+    .button-wrapper {
+        align-items: center;
+    }
+}
